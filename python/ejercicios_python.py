@@ -122,20 +122,82 @@ eliminar_numero(principal)
 '''
 
 
+#? EJERCICO 5
+
+''''
+Descripción del Problema:
+Crea un programa en Python que permita a un usuario gestionar una lista de tareas con las siguientes funcionalidades:
+
+    Agregar una tarea nueva. Cada tarea debe tener un título, una descripción y una prioridad (Alta, Media o Baja). -----
+    Marcar una tarea como completada.
+    Mostrar todas las tareas pendientes organizadas por prioridad (de Alta a Baja).
+    Mostrar todas las tareas completadas.
+    Eliminar una tarea completada.
+
+Requisitos:
+
+    Usa estructuras de datos como listas y diccionarios.
+    Implementa funciones para cada funcionalidad.
+    Utiliza un menú interactivo que permita al usuario elegir qué acción realizar.
+'''
+
+tareas={"Titulo_Tareas":[],"Descripcion_tareas":[], "prioridad_tarea":[],"estado_tarea":[] }
+
+def menu():
+    print("Bienvenido")
+    print("1. Agregar nueva Tarea")
+    print("2. Marcar Tarea")
+    print("3. Ver Tareas pendientes")
+    print("4. Ver Tareas completadas")
+    print("5. Eliminar tarea")
+    opcion=int(input('Elije una opcion: '))
+    return opcion
 
 
+def agregar_tarea():
+    print("Agregar Tarea")
+    titulo_tarea=input("Titulo tarea: ")
+    descripcion_tarea=input("Descripcion tarea: ")
+    prioridad_tarea=input("prioridad tarea: ")
+    tareas["Titulo_Tareas"].append(titulo_tarea)
+    tareas['Descripcion_tareas'].append(descripcion_tarea)
+    tareas["prioridad_tarea"].append(prioridad_tarea)
+    tareas["estado_tarea"].append('pendiente')
 
 
+def ver_tareas_pendientes():
+    print("Ver tareas pedmientes")
+    print(f'Tarea.- Prioridad: {tareas["prioridad_tarea"]}, Nombre tarea: {tareas["Titulo_Tareas"]}')
 
 
+def marcar_tarea():
+    titulo=input('Ingresa el nombre de la tarea: ')
+    indice_tarea=tareas['Titulo_Tareas'].index(titulo)
+    print(f'La tarea *{tareas["Titulo_Tareas"][indice_tarea]}* fue completada?')
+    print('1. si')
+    print('2. no')
+    eleccion=int(input("Selecciona un valor: "))
+
+    if eleccion==1:
+        tareas["estado_tarea"][indice_tarea]='Completada'
+        print("Tarea completada con exito 🏆")
+    else:
+        print('ok')
 
 
+def eliminar_tarea():
+    titulo=input('Ingresa el nombre de la tarea: ')
+    indice_tarea=tareas['Titulo_Tareas'].index(titulo)
+    print(f'Deseas eliminar la tarea *{tareas["Titulo_Tareas"][indice_tarea]}* ?')
+    print('1. si')
+    print('2. no')
+    eleccion=int(input("Selecciona un valor: "))
 
-
-
-
-
-
-
-
-
+    if eleccion==1:
+        tareas["Titulo_Tareas"].pop(indice_tarea)
+        tareas['Descripcion_tareas'].pop(indice_tarea)
+        tareas["prioridad_tarea"].pop(indice_tarea)
+        tareas["estado_tarea"].pop(indice_tarea)
+        print("Tarea eliminada con exito 🏆")
+    else:
+        print('ok')
