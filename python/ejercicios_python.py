@@ -141,6 +141,7 @@ Requisitos:
     Utiliza un menú interactivo que permita al usuario elegir qué acción realizar.
 '''
 
+''''
 tareas={"Titulo_Tareas":[],"Descripcion_tareas":[], "prioridad_tarea":[],"estado_tarea":[] }
 
 def menu():
@@ -201,3 +202,24 @@ def eliminar_tarea():
         print("Tarea eliminada con exito 🏆")
     else:
         print('ok')
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
