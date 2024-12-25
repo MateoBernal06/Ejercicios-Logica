@@ -204,22 +204,3 @@ def eliminar_tarea():
         print('ok')
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
