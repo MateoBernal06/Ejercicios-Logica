@@ -21,7 +21,7 @@ do {
     i++
 } while (i<3);
 
-// for-of --> recorre los valores de algo iterable (arreglos, ...)
+// for-of --> recorre los valores de algo iterable (array, map, )
 
 let myMap = new Map([
     ["name", "Mateo"],
@@ -41,6 +41,18 @@ for(let dato of datos){
     console.log(dato)
 }
 
-// forEach
+// forEach --> es una funcion que permite iterar en un arreglo
 
+datos.forEach(function(value){
+    console.log(value)
+})
 
+//* Manera resumida de un forEach
+console.log("-------------")
+datos.forEach((value)=>console.log(value))
+
+console.log("-------------")
+myMap.forEach((value)=> console.log(value))
+
+console.log("-------------")
+mySet.forEach((value)=> console.log(value))
