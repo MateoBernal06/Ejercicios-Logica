@@ -5,8 +5,7 @@
 La suma de estos múltiplos es 23. La suma de estos múltiplos es 23.
 Hallar la suma de todos los múltiplos de 3 ó 5 por debajo del número del valor del parámetro proporcionado.*/ 
 
-
-function suma_multiplos(num){
+/*function suma_multiplos(num){
     let suma=0;
     for(let i=1;i<num;i++){
         if(i%3==0||i%5==0){
@@ -15,7 +14,7 @@ function suma_multiplos(num){
     }
     return suma;
 }
-//console.log(suma_multiplos(1000))
+console.log(suma_multiplos(1000))*/
 
 
 //! ejercicio 2
@@ -28,7 +27,7 @@ function suma_multiplos(num){
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
-function numeros(){
+/*function numeros(){
     for(let i=1; i<=100; i++){
 
         if(i%3==0 && i%5==0){
@@ -44,7 +43,7 @@ function numeros(){
             console.log(i)
         }
     }
-}
+}*/
 
 
 //! ejercicios mouredev -- Bucles
@@ -80,8 +79,8 @@ console.log(sumaNuumeros())*/
 
 //* 4. Dado un array de nombres, usa un bucle para imprimir cada nombre en la consola
 
-let nombres = ["Mateo", "Maria", "Daniela", "Carla"]
-/*nombres.forEach((nombre)=>{
+/*let nombres = ["Mateo", "Maria", "Daniela", "Carla"]
+nombres.forEach((nombre)=>{
     console.log(nombre)
 })*/
 
@@ -94,6 +93,7 @@ let nombres = ["Mateo", "Maria", "Daniela", "Carla"]
 }*/
 
 //* 5. Escribe un bucle que cuente el número de vocales en una cadena de texto
+
 /*function conteoVocales(palabra){
     let contador_a= 0, contador_e=0, contador_i=0, contador_o=0, contador_u=0
     for (vocal of palabra) {
@@ -118,25 +118,62 @@ let nombres = ["Mateo", "Maria", "Daniela", "Carla"]
 
 conteoVocales("irlanda")*/
 
+//* 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
 
-// 6. Dado un array de números, usa un bucle para multiplicar todos los números y mostrar el producto
+/*let arrayNumeros = [8, 1, 6, 4, 5, 2]
 
-// 7. Escribe un bucle que imprima la tabla de multiplicar del 5
+function multiplicacion(){
+    let producto = 1
+    for( n of arrayNumeros){
+        producto = producto * n
+    }
+    return producto
+}
+
+console.log(multiplicacion())*/
+
+//* 7. Escribe un bucle que imprima la tabla de multiplicar del 5
+
+/*function tablaMultiplicar(num){
+    console.log(`Tabla del ${num}`)
+    for(let i=0; i<=10; i++){
+        console.log(`${num} * ${i} = ${i*num}`)
+    }
+}
+
+tablaMultiplicar(5)*/
 
 // 8. Usa un bucle para invertir una cadena de texto
 
-// 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+/*const invertir = (palabra='') =>{
+    let palabra_revertida=''
+    for(let i=palabra.length-1; i>=0; i--){
+        palabra_revertida = palabra_revertida + palabra[i]
+    }
+    console.log(palabra_revertida)
+}
+invertir("Jose MAteo Bernal Ayovi")*/
 
-// 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+//* 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
+
+
+//* 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+/*let numerosArray = [50, 8, 15, 2, 1, 9, 14]
+function mayores(array){
+    let nuevoArray=[]
+    for(n of array){
+        if(n>=10){
+            nuevoArray.push(n)
+        }
+    }
+    return nuevoArray
+}
+console.log(mayores(numerosArray))*/
 
 
 //! ejercicios mouredev -- Funciones
 
-// 1. Crea una función que reciba dos números y devuelva su suma
-
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
-
-// 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
@@ -144,10 +181,6 @@ conteoVocales("irlanda")*/
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
-// 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
-
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
-
-// 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
 
 // 10. Crea una función que calcule el factorial de un número dado
