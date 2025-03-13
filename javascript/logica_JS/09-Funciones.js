@@ -47,3 +47,4 @@ function superior(funcion, param){
     funcion(param)
 }
 superior(myName, "Mateo")
+

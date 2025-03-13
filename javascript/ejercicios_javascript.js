@@ -173,14 +173,14 @@ console.log(mayores(numerosArray))*/
 
 //! ejercicios mouredev -- Funciones
 
-// 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+//* 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 
-// 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
+//* 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
-// 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
+//* 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
 
-// 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
+//* 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
-// 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
+//* 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
 
-// 10. Crea una función que calcule el factorial de un número dado
+//* 10. Crea una función que calcule el factorial de un número dado
