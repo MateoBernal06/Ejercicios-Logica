@@ -31,10 +31,6 @@ let person = {
     university: "EPN",
     age:21,
     email: "jose@gmail.com",
-    lenguajes : {
-        frontend:"React",
-        backend:"FastApi"
-    }
 }
 
 let lenguajes = {
@@ -48,7 +44,8 @@ console.log(name)
 console.log(age)
 
 //Nuevo nombre de variables y valores predefinidos
-let {name:nameDos, university:universityDos, age:ageDos, address="Guatemala y condorcunga"} = person
+let {name:nameDos, university:universityDos, age:ageDos, 
+    address="Guatemala y condorcunga"} = person
 console.log(nameDos)
 console.log(universityDos)
 console.log(ageDos)
@@ -56,12 +53,17 @@ console.log(address)
 
 
 //Acceso a objetos anidados
-
-let {name:nameTres, university:universityTres, age:ageTres, lenguajes:{frontend}} = person
-console.log(frontend)
+/*let {name:nameTres, university:universityTres, age:ageTres, 
+    lenguajes:{frontend}} = person
+console.log(frontend)*/
 
 
 //? Propagacion (...)
+
+let university={
+    place:"Ladron de Guevara",
+    Director:"?"
+}
 
 //Arrays
 
@@ -73,6 +75,11 @@ console.log(numbersTres)
 let numbersCuatro = [...numbers, ...numbersDos]
 console.log(numbersCuatro)
 
-//Objetos
+//Sintaxis
+let datosPersondos = {...person, mother:"Irlanda"}
+console.log(datosPersondos)
+
+//Combinacion
 let datosPerson = {...person, ...lenguajes}
 console.log(datosPerson)
+

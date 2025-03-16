@@ -176,11 +176,43 @@ console.log(mayores(numerosArray))*/
 //* 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
 
 //* 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
+/*let palabras = ["mateo", "jose", 'bye', 'hola']
+function convertirMayusculas(arreglo){
+    let convertido = []
+    let i = 0
+    arreglo.forEach((palabra)=>{
+        convertido[i]=palabra.toUpperCase()
+        i+=1
+    })
+    return convertido
+}
+console.log(convertirMayusculas(palabras))*/
+
 
 //* 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
 
 //* 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
 //* 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
+/*let numeros = [1,2,3,4,5,6,7,8,9,10]
+const elevado=(x)=>{
+    let i = 0
+    let numeosElevado=[]
+    x.forEach(numero => {
+        numeosElevado[i]=Math.pow(numero,2)
+        i+=1
+    });
+    return numeosElevado
+}
+console.log(elevado(numeros))*/
 
 //* 10. Crea una función que calcule el factorial de un número dado
+/*const factorial = (x)=>{
+    let resultadoFactorial = 1
+    for(let i=1; i<=x; i++){
+        resultadoFactorial = resultadoFactorial * i
+    }
+    return resultadoFactorial
+}
+console.log(factorial(12))*/
+
