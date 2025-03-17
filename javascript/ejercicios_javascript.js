@@ -190,6 +190,21 @@ console.log(convertirMayusculas(palabras))*/
 
 
 //* 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
+/*const primo = (n) =>{
+    let y = 0
+    for(let i=1; i<=n;i++){
+        if(n%i==0){
+            y+=1
+        }
+    }
+    if(y>2){
+        return false
+    }
+    else{
+        return true
+    }
+}
+console.log(primo(20)) */
 
 //* 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
 
