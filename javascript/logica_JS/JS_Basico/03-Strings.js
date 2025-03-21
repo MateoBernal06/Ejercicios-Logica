@@ -28,3 +28,8 @@ Bernal
 Ayovi`
 
 console.log(myName)
+
+// El simbolo "\" es ignorado en JS
+let ignora = "Hola\ Mundo"
+console.log(ignora)
+
