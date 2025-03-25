@@ -95,3 +95,18 @@ let correos = []
 })
 console.log(new Set(correos));*/
 
+
+// 10. Transforma el mapa en un objeto, a continuación, transforma el objeto en un mapa con clave el email de 
+// cada usuario y como valor todos los datos del usuario
+
+let objetoDatos = Object.fromEntries(datosPersonales)
+
+let nuevoMapa = new Map();
+
+for (let key in objetoDatos) {
+    let datosUsuario = objetoDatos[key];
+    let email = datosUsuario[2];
+    nuevoMapa.set(email, datosUsuario);
+}
+
+console.log(nuevoMapa);
