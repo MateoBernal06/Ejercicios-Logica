@@ -103,10 +103,10 @@ let objetoDatos = Object.fromEntries(datosPersonales)
 
 let nuevoMapa = new Map();
 
-for (let key in objetoDatos) {
+/*for (let key in objetoDatos) {
     let datosUsuario = objetoDatos[key];
     let email = datosUsuario[2];
     nuevoMapa.set(email, datosUsuario);
 }
 
-console.log(nuevoMapa);
+console.log(nuevoMapa);*/
