@@ -109,7 +109,6 @@ let carUno = new Car('Ferrari Rojo')
 console.log(carUno instanceof Car);
 
 
-//? proxy --> Permite personaliza el comportamiento de una clase
 
 
 
