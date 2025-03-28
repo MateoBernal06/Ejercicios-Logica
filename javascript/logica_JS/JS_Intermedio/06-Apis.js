@@ -27,7 +27,7 @@
 
 // Manera nativa
 
-/*fetch('https://jsonplaceholder.typicode.com/photos/5')
+fetch('https://jsonplaceholder.typicode.com/photos/5')
 // Transforma los datos a formato JSON
 .then((response)=>{
     return response.json()
@@ -39,7 +39,7 @@
 // Captura los posibles errores
 .catch((error)=>{
     console.log('Error', error);
-})*/
+})
 
 
 // Usando Async-Await
@@ -62,7 +62,7 @@ verDatos()*/
 
 //? Manejo de errores
 
-/*const consultarServidor = async() =>{
+const consultarServidor = async() =>{
     try {
         const response = await fetch("https://jsonplaceholder.typicode.com/MB")
         if(!response.ok){
@@ -76,13 +76,13 @@ verDatos()*/
     }
 }
 
-consultarServidor()*/
+consultarServidor()
 
 //? Solcitudes APIS 
 
 //* GET 
 
-/*const verDatos = async () => {
+const verDatos = async () => {
     try {
         // Procesa los datos 
         const response = await fetch('https://jsonplaceholder.typicode.com/photos')
@@ -95,12 +95,12 @@ consultarServidor()*/
     }
 }
 
-verDatos()*/
+verDatos()
 
 
 //* POST
 
-/*const crearDatos = async () =>{
+const crearDatos = async () =>{
     
     const datos = {
         userId: 1,
@@ -125,12 +125,12 @@ verDatos()*/
     }
 }
 
-crearDatos()*/
+crearDatos()
 
 
 //* PATCH
 
-/*const actualizacionParcial = async() =>{
+const actualizacionParcial = async() =>{
     try {
         const datos = {title:"Titulo actualizado!!"}
         const url = await fetch('https://jsonplaceholder.typicode.com/posts/12',{
@@ -146,7 +146,7 @@ crearDatos()*/
     }
 }
 
-actualizacionParcial()*/
+actualizacionParcial()
 
 
 //? Autentificacion 
@@ -176,3 +176,7 @@ verClima("quito")
 
 
 //* Versionado de APIS
+
+
+
+
