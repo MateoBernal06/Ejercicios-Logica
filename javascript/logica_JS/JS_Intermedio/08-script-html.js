@@ -1,13 +1,16 @@
+const lugarTareas = document.getElementById('tareas')
+const titulo_tarea = document.getElementById('titulo_tarea')
 
 const agregarTarea = () =>{
     let tareas = {}
-    const titulo_tarea = document.getElementById('titulo_tarea').value
-    const descripcion_tarea = document.getElementById('contenido_tarea').value
-    const lugarTareas = document.getElementById('tareas')
-
+    
     tareas = {
-        titulo : titulo_tarea,
-        descripcion : descripcion_tarea
+        titulo : titulo_tarea.value
+    }
+    
+    if((titulo_tarea.value).length == 0){
+        alert('Campo obligatorio')
+        return
     }
 
     for(tareaAgregada in tareas){
@@ -16,7 +19,5 @@ const agregarTarea = () =>{
         lugarTareas.appendChild(listarTareas)
     }
 
-    titulo_tarea=''
-    descripcion_tarea=''
+    titulo_tarea.value = ''
 }
-
