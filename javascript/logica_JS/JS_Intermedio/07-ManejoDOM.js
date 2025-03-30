@@ -33,7 +33,7 @@ document.querySelectorAll('.parrafo')
 const titulo =document.getElementById('titulo')
 titulo.textContent = 'Hola mundo'
 
-//innerHTML --> e utiliza para leer o modificar el contenido HTML de un elemento.
+//innerHTML --> se utiliza para leer o modificar el contenido HTML de un elemento.
 //(no solo maneja texto, sino también etiquetas HTML.)
 const parrafo = document.querySelector('.contenedor')
 parrafo.innerHTML = '<p>Este es un nuevo parrafo</p>'
