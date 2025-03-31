@@ -639,31 +639,70 @@ verPokemon('pichu')*/
 
 // 1. Crea un elemento (por ejemplo, un <h1 id="title">) y cambia su contenido a "¡Hola Mundo!"" al 
 // cargar la página
+document.addEventListener('DOMContentLoaded', ()=>{
+    const saludo = document.getElementById('saludo')
+    saludo.textContent = 'Hola Mundo!'
+})
+
 
 // 2. Inserta una imagen con id="myImage" y cambia su atributo src a otra URL
+const imagen = document.querySelector('img')
+const myImage = imagen.getAttribute('src')
+imagen.setAttribute('src', './logotype.webp')
+
 
 // 3. Crea un <div id="box"> sin clases y agrega la clase resaltado cuando se cargue la página
+const box = document.getElementById('box')
+box.addEventListener('click', ()=>{
+    box.style.backgroundColor = 'green'
+})
+
 
 // 4. Crea un párrafo con id="paragraph" y cambia su color de texto a azul
+const colorParrafo = document.getElementById('paragraph')
+colorParrafo.style.color = 'blue'
 
 // 5. Agrega un botón que, al hacer clic, cree un nuevo elemento <li> con el texto "Nuevo elemento y 
-// lo agregue 
-// a una lista <ul id="list">
+// lo agregue a una lista <ul id="list">
+const agregar = () =>{
+    const listar = document.getElementById('listar')
+    const elemento = document.createElement('li')
+    elemento.textContent = 'Nuevo elemento'
+    listar.appendChild(elemento)
+}
 
 // 6. Crea un párrafo con id="deleteParagraph" y un botón. Al hacer clic en el botón, elimina el 
 // párrafo del DOM
+const eliminarTexto = () =>{
+    const texto = document.getElementById('deleteParagraph')
+    texto.remove()
+}
+
 
 // 7. Crea un <div id="content"> con algún texto y reemplaza su contenido por un <h2> con el mensaje 
 // "Nuevo Contenido"
+const reemplazar = document.getElementById('nuevo')
+reemplazar.innerHTML = '<h2>Nuevo contenido</h2>'
 
 // 8. Crea un botón con id="greetBtn" y añade un evento que muestre una alerta con el mensaje "¡Hola!" al 
 // hacer clic
+const verAlerta = () =>{
+    alert('Hola!!!')
+}
+
 
 // 9. Crea un <input id="textInput"> y un <div id="result">. Al escribir en el input, el <div> se 
-// debe actualizarse 
-// mostrando lo que se escribe
+// debe actualizarse mostrando lo que se escribe
+const input = document.getElementById('textInput')
+const resultadoInput = document.getElementById('result')
+
+const mostrarEscribir = () => {
+    resultadoInput.textContent = input.value
+}
 
 // 10. Crea un botón con id="backgroundBtn" y, al hacer clic, cambia el color de fondo del <body> a 
 // un color diferente
-
-
+const cambiarColor = () =>{
+    const body = document.querySelector('body')
+    body.style.backgroundColor = 'yellow'
+}
